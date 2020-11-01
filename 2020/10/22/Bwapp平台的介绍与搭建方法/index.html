@@ -20,28 +20,22 @@
     var CONFIG = {"hostname":"blank-admure.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="sqli-labs-master 闯关前知识点学习">
+  <meta name="description" content="Bwapp平台的介绍与搭建方法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="sqli-labs-master 闯关前知识点学习">
-<meta property="og:url" content="https://blank-admure.github.io/2020/10/27/sqli-labs-master%20%E9%97%AF%E5%85%B3%E5%89%8D%E7%9F%A5%E8%AF%86%E7%82%B9%E5%AD%A6%E4%B9%A0/index.html">
+<meta property="og:title" content="Bwapp平台的介绍与搭建方法">
+<meta property="og:url" content="https://blank-admure.github.io/2020/10/22/Bwapp%E5%B9%B3%E5%8F%B0%E7%9A%84%E4%BB%8B%E7%BB%8D%E4%B8%8E%E6%90%AD%E5%BB%BA%E6%96%B9%E6%B3%95/index.html">
 <meta property="og:site_name" content="blank">
-<meta property="og:description" content="sqli-labs-master 闯关前知识点学习">
+<meta property="og:description" content="Bwapp平台的介绍与搭建方法">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201027121015297.png#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201027121033778.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzU2OTcx,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201027121215693.png#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201027121220675.png#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201027121239192.png#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201027121254167.png#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/2020102712130998.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzU2OTcx,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="article:published_time" content="2020-10-27T04:30:30.000Z">
-<meta property="article:modified_time" content="2020-10-27T06:43:21.301Z">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/202010302332372.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzU2OTcx,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="article:published_time" content="2020-10-22T13:26:35.000Z">
+<meta property="article:modified_time" content="2020-11-01T14:02:20.470Z">
 <meta property="article:author" content="blank-admure">
-<meta property="article:tag" content="sqli-labs">
+<meta property="article:tag" content="bwapp">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20201027121015297.png#pic_center">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/202010302332372.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzU2OTcx,size_16,color_FFFFFF,t_70#pic_center">
 
-<link rel="canonical" href="https://blank-admure.github.io/2020/10/27/sqli-labs-master%20%E9%97%AF%E5%85%B3%E5%89%8D%E7%9F%A5%E8%AF%86%E7%82%B9%E5%AD%A6%E4%B9%A0/">
+<link rel="canonical" href="https://blank-admure.github.io/2020/10/22/Bwapp%E5%B9%B3%E5%8F%B0%E7%9A%84%E4%BB%8B%E7%BB%8D%E4%B8%8E%E6%90%AD%E5%BB%BA%E6%96%B9%E6%B3%95/">
 
 
 <script id="page-configurations">
@@ -54,7 +48,7 @@
   };
 </script>
 
-  <title>sqli-labs-master 闯关前知识点学习 | blank</title>
+  <title>Bwapp平台的介绍与搭建方法 | blank</title>
   
 
 
@@ -169,7 +163,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://blank-admure.github.io/2020/10/27/sqli-labs-master%20%E9%97%AF%E5%85%B3%E5%89%8D%E7%9F%A5%E8%AF%86%E7%82%B9%E5%AD%A6%E4%B9%A0/">
+    <link itemprop="mainEntityOfPage" href="https://blank-admure.github.io/2020/10/22/Bwapp%E5%B9%B3%E5%8F%B0%E7%9A%84%E4%BB%8B%E7%BB%8D%E4%B8%8E%E6%90%AD%E5%BB%BA%E6%96%B9%E6%B3%95/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -182,7 +176,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          sqli-labs-master 闯关前知识点学习
+          Bwapp平台的介绍与搭建方法
         </h1>
 
         <div class="post-meta">
@@ -191,17 +185,23 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-10-27 12:30:30 / 修改时间：14:43:21" itemprop="dateCreated datePublished" datetime="2020-10-27T12:30:30+08:00">2020-10-27</time>
+              <time title="创建时间：2020-10-22 21:26:35" itemprop="dateCreated datePublished" datetime="2020-10-22T21:26:35+08:00">2020-10-22</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-01 22:02:20" itemprop="dateModified" datetime="2020-11-01T22:02:20+08:00">2020-11-01</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/sqli-labs/" itemprop="url" rel="index"><span itemprop="name">sqli-labs</span></a>
+                  <a href="/categories/bwapp/" itemprop="url" rel="index"><span itemprop="name">bwapp</span></a>
                 </span>
             </span>
 
@@ -221,13 +221,13 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2020/10/27/sqli-labs-master%20%E9%97%AF%E5%85%B3%E5%89%8D%E7%9F%A5%E8%AF%86%E7%82%B9%E5%AD%A6%E4%B9%A0/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/10/27/sqli-labs-master%20%E9%97%AF%E5%85%B3%E5%89%8D%E7%9F%A5%E8%AF%86%E7%82%B9%E5%AD%A6%E4%B9%A0/" itemprop="commentCount"></span>
+    <a title="valine" href="/2020/10/22/Bwapp%E5%B9%B3%E5%8F%B0%E7%9A%84%E4%BB%8B%E7%BB%8D%E4%B8%8E%E6%90%AD%E5%BB%BA%E6%96%B9%E6%B3%95/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/10/22/Bwapp%E5%B9%B3%E5%8F%B0%E7%9A%84%E4%BB%8B%E7%BB%8D%E4%B8%8E%E6%90%AD%E5%BB%BA%E6%96%B9%E6%B3%95/" itemprop="commentCount"></span>
     </a>
   </span>
   
   
-            <div class="post-description">sqli-labs-master 闯关前知识点学习</div>
+            <div class="post-description">Bwapp平台的介绍与搭建方法</div>
 
         </div>
       </header>
@@ -238,51 +238,80 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>1)、前期准备、知识点<br>开始之前，为了方便查看sql注入语句，我在sqli-labs-master网页源码php部分加了两行代码，第一行意思是输出数据库语句，第二行是换行符<br><img src="https://img-blog.csdnimg.cn/20201027121015297.png#pic_center" alt="在这里插入图片描述"></p>
-<p>一、Mysql 登录 </p>
-<p>1、明文密码   在bin目录下 输入：mysql -u 账户 -p 密码</p>
-<p>2、**密码  在bin目录下 输入：mysql -u 账户 -p 后回车再输入密码<br><img src="https://img-blog.csdnimg.cn/20201027121033778.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzU2OTcx,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>二、注释符</p>
-<p>–+  –  # 都是SQL语句的注释符 ，sql语句运行到此结束。</p>
-<p>三、and or </p>
-<p>　　A and B A,B都Ture 结果才为Ture </p>
-<p>　　A or B A,B 有一个Ture 结果就为Ture</p>
-<p>四、limit</p>
-<p>limit m,n ：显示从m列开始 显示n行</p>
-<p>五、 ？id=1  后加   ‘  </p>
-<p>可以判断存在SQL漏洞，</p>
-<p>例如：<a target="_blank" rel="noopener" href="http://localhost/sqli-labs-master/Less-1/?id=">http://localhost/sqli-labs-master/Less-1/?id=</a> 1’or 1=1 –+</p>
-<p>sql语句：SELECT * FROM users WHERE id=’ 1’or 1=1 – ‘ LIMIT 0,1</p>
-<p>六、order by</p>
-<p>order by + n  ： 查询结果根据第n列排序</p>
-<p>order by 可判断数据表 列数</p>
-<p>在尝试是N值折半测试</p>
-<p>例：<a target="_blank" rel="noopener" href="http://localhost/sqli-labs-master/Less-1/?id=1&#39;order">http://localhost/sqli-labs-master/Less-1/?id=1&#39;order</a> by 3 –+</p>
-<p>SELECT * FROM users WHERE id=’1’order by 3 – ‘ LIMIT 0,1<br><img src="https://img-blog.csdnimg.cn/20201027121215693.png#pic_center" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20201027121220675.png#pic_center" alt="在这里插入图片描述"><br>七、union 联合查询</p>
-<p>在使用 order by 测试出列数后，使用 union + 数字  查看回显信息，测试回显的哪几列，</p>
-<p>错误示例：<a target="_blank" rel="noopener" href="http://localhost/sqli-labs-master/Less-1/?id=1&#39;union">http://localhost/sqli-labs-master/Less-1/?id=1&#39;union</a> select 1,2,3–+</p>
-<p>如图，在id值正确时 由于limit 0,1只能显示一行，回显结果无法做出正确判断<br><img src="https://img-blog.csdnimg.cn/20201027121239192.png#pic_center" alt="在这里插入图片描述"><br>正确示例：<a target="_blank" rel="noopener" href="http://localhost/sqli-labs-master/Less-1/?id=-1&#39;union">http://localhost/sqli-labs-master/Less-1/?id=-1&#39;union</a> select 1,2,3–+</p>
-<p>如图，将id值设置为-1（即不存在值），结果回显为第2、3列<br><img src="https://img-blog.csdnimg.cn/20201027121254167.png#pic_center" alt="在这里插入图片描述"><br> 九、’ 部分 特殊字符部分转化为十六进制</p>
-<p>注：在SQL注入时  如需 ‘ ‘ 单引号括住内容  尽量转化为16进制（0x+内容的十六进制）</p>
-<p>方式如下：<img src="https://img-blog.csdnimg.cn/2020102712130998.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzU2OTcx,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>十、暴库SQL语句</p>
-<p>查库：select schema_name from information_schema.schemata</p>
-<p>查表：select table_name from information_schema.tables where table_schema=’库名’</p>
-<p>查列：select column_name from information_schema.columns where table_name=’表名’</p>
-<p>查字段：select 列1，列2，列3 from 库名.表名</p>
-<p>注：引号包裹部分 整体使用十六进制代替 如  table_schema=’security’  -&gt;  table_schema=0x7365637572697479</p>
-<p>十一、SQL常用函数</p>
-<p>查询函数</p>
-<p>1.version（）   –Mysql版本</p>
-<p>2.user（）  –数据库用户名</p>
-<p>3.database（）  –数据库名</p>
-<p>4.@@datadir  –数据库安装路径</p>
-<p>5.@@version_compile_os  –操作系统的版本</p>
-<p>字符串连接函数：</p>
-<p>1.concat(字符串1，字符串2)   –没有分隔符的连接字符串</p>
-<p>2.concat_ws（-/~，字符串1，字符串2）  –含有分隔符的连接字符串</p>
-<p>3.group_concat(字符串1，字符串2)    –连接一个组的所有字符串，并用，分隔每一个字符。</p>
-<p>例：select 1,2,group_concat(concat_ws(0x2d2d,id,username,password)) from security.users</p>
-<p>使用及区别详情见：<a target="_blank" rel="noopener" href="https://baijiahao.baidu.com/s?id=1595349117525189591&wfr=spider&for=pc">https://baijiahao.baidu.com/s?id=1595349117525189591&amp;wfr=spider&amp;for=pc</a></p>
-<p>本文参考于：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/yyd-sun/p/12256407.html">https://www.cnblogs.com/yyd-sun/p/12256407.html</a></p>
+        <p>先来介绍一下bwapp</p>
+<p>bwapp是一款非常好用的漏洞演示平台，包含有100多个漏洞</p>
+<pre><code> SQL, HTML, iFrame, SSI, OS Command, XML, XPath, LDAP,
+
+PHP Code, Host Header and SMTP injections
+Authentication, authorization and session management issues
+Malicious, unrestricted file uploads and backdoor files
+Arbitrary file access and directory traversals
+Heartbleed and Shellshock vulnerability
+Local and remote file inclusions (LFI/RFI)
+Server Side Request Forgery (SSRF)
+Configuration issues: Man-in-the-Middle, Cross-Domain policy file,
+FTP, SNMP, WebDAV, information disclosures,...
+HTTP parameter pollution and HTTP response splitting
+XML External Entity attacks (XXE)
+HTML5 ClickJacking, Cross-Origin Resource Sharing (CORS)
+and web storage issues
+Drupal, phpMyAdmin and SQLite issues
+Unvalidated redirects and forwards
+Denial-of-Service (DoS) attacks
+Cross-Site Scripting (XSS), Cross-Site Tracing (XST) and
+Cross-Site Request Forgery (CSRF)
+AJAX and Web Services issues (JSON/XML/SOAP)
+Parameter tampering and cookie poisoning
+Buffer overflows and local privilege escalations
+PHP-CGI remote code execution
+HTTP verb tampering
+And much more</code></pre>
+<p>特点：</p>
+<pre><code>开源的php应用
+后台Mysql数据库
+可运行在Linux/Windows Apache/IIS
+支持WAMP或者XAMPP</code></pre>
+<p><strong>安装方法:</strong> 在这里，我教大家的是用centos虚拟机和docker下载安装bwapp</p>
+<p>有docker的可以跳过此步，安装此环境需要先安装docker</p>
+<p><strong>注：以下操作均是以root权限运行的</strong></p>
+<p>1.Docker 要求 CentOS 系统的内核版本高于 3.10 ，查看本页面的前提条件来验证你的CentOS 版本是否支持 Docker 。通过 uname -r 命令查看你当前的内核版本</p>
+<blockquote>
+<p>uname -r</p>
+</blockquote>
+<p>2.、初步安装和启动docker</p>
+<blockquote>
+<p>yum update -y<br>yum -y install docker<br>systemctl start docker</p>
+</blockquote>
+<p>3.因为docker自带的镜像源不是国内的，比较慢，下载仓库容易出错，所以我们先把它换成国内的镜像源，在这以阿里源为例:</p>
+<blockquote>
+<p>vi /etc/docker/daemon.json<br>打开文件，填入以下内容：<br>{<br>“registry-mirrors”: [“<a href="https://aj2rgad5.mirror.aliyuncs.com&quot;]">https://aj2rgad5.mirror.aliyuncs.com&quot;]</a><br> }</p>
+</blockquote>
+<p>填入完毕后，按esc然后按冒号”:”,在输入x，回车即保存成功。</p>
+<p>4.重启docker</p>
+<blockquote>
+<p>systemctl daemon-reload<br>systemctl restart docker.service</p>
+</blockquote>
+<p>5、测试docker是否正常安装和运行</p>
+<blockquote>
+<p>docker run hello-world</p>
+</blockquote>
+<p>运行成功即为安装成功。</p>
+<p>bwapp安装:</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$sudo docker search bwapp</span><br></pre></td></tr></table></figure>
+<p>出现如下结果:</p>
+<blockquote>
+<p>NAME                     DESCRIPTION<br>STARS               OFFICIAL            AUTOMATED raesene/bwapp<br>Instance of the OWASP bWAPP</p>
+</blockquote>
+<p>安装仓库:</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$sudo docker pull raesene/bwapp</span><br></pre></td></tr></table></figure>
+<p>然后查看拉取的images：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$sudo docker images</span><br></pre></td></tr></table></figure>
+<p>显示如下:</p>
+<p>REPOSITORY              TAG                 IMAGE ID            CREATED             SIZE<br>raesene/bwapp           latest              f7c52f0bb345        4 weeks ago         441MB</p>
+<p>REPOSITORY 下出现raesene/bwapp 即为拉取成功。</p>
+<p>使用docker run命令运行：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$sudp docker run -dt --name bWapp -p <span class="number">8000</span>:<span class="number">80</span> --rm raesene/bwapp</span><br></pre></td></tr></table></figure>
+<p>浏览器查看8080端口页面，出现界面即为安装成功，然后进入<a target="_blank" rel="noopener" href="http://ip/bWAPP/install.php%EF%BC%8C%E7%82%B9%E5%87%BB%E5%AE%89%E8%A3%85%E3%80%82%E6%9C%80%E5%90%8E%E7%9B%B4%E6%8E%A5%E8%AE%BF%E9%97%AE%E7%AB%AF%E5%8F%A3%E5%8D%B3%E5%87%BA%E7%8E%B0%E5%A6%82%E4%B8%8B%E7%95%8C%E9%9D%A2%EF%BC%9A">http://IP/bWAPP/install.php，点击安装。最后直接访问端口即出现如下界面：</a><br><img src="https://img-blog.csdnimg.cn/202010302332372.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzU2OTcx,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>默认账号密码bee/bug，登录成功即可开始你的做题之旅啦🤭。</p>
 
     </div>
 
@@ -292,7 +321,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/sqli-labs/" rel="tag"># sqli-labs</a>
+              <a href="/tags/bwapp/" rel="tag"># bwapp</a>
           </div>
 
         
@@ -377,20 +406,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">10</span>
+          <span class="site-state-item-count">11</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
